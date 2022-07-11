@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Registration";
+}
+
+<h2>Registration</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.Label("FullName") @Html.TextBox("FullName")<br />
+    @Html.Label("Age ") @Html.TextBox("Age")<br />
+    @Html.Label("Contact") @Html.TextBox("Contact")<br />
+    @Html.Label("Email     ") @Html.TextBox("email")<br />
+
+    <div>
+        <button type="submit" style="background-color:blue ;color:white; align-items:flex-end">Submit</button>
+    </div>
+}
